@@ -1,6 +1,6 @@
 {
   "name": "selene-framework/application-builder",
-  "description": "A graphical environment for interactively building Selene aaplications",
+  "description": "A graphical environment for interactively building Selene applications",
   "type": "selene-plugin",
   "keywords": [
     "plugin",

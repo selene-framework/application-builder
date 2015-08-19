@@ -1,13 +1,13 @@
-# demo-app
+# application-builder
 
-##### Demonstration Application for the Selene Framework 
+##### A graphical environment for interactively building Selene applications
 
 ## Installation
 
 Type this on the terminal, on your application's directory:
 
 ```shell
-selene module:install selene-framework/demo-app
+selene module:install-plugin selene-framework/application-builder
 ```
 
 ## License
