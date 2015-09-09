@@ -1,10 +1,10 @@
 {
-  "name": "selene-framework/application-builder",
-  "description": "A graphical environment for interactively building Selene applications",
-  "type": "selene-plugin",
+  "name": "selenia-plugins/application-builder",
+  "description": "A graphical environment for interactively building Selenia applications",
+  "type": "selenia-plugin",
   "keywords": [
     "plugin",
-    "selene framework"
+    "selenia"
   ],
   "license": "MIT",
   "authors": [
@@ -20,11 +20,11 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "selene-framework/installers": "^1.0.0"
+    "selenia/installers": "^1.0.0"
   },
   "autoload": {
     "psr-4": {
-      "Selene\\ApplicationBuilder\\": "src"
+      "Selenia\\Plugins\\ApplicationBuilder\\": "src"
     }
   }
 }

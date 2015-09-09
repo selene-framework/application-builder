@@ -1,7 +1,7 @@
 <?php
-namespace Selene\ApplicationBuilder\Config;
+namespace Selenia\Plugins\ApplicationBuilder\Config;
 
-use Selene\ApplicationBuilder\Controllers\Index;
+use Selenia\Plugins\ApplicationBuilder\Controllers\Index;
 
 class ApplicationBuilderModule
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Selene\ApplicationBuilder\Config\ApplicationBuilderModule;
+use Selenia\Plugins\ApplicationBuilder\Config\ApplicationBuilderModule;
 
 ModuleOptions (__DIR__, [
   'templates'  => true,

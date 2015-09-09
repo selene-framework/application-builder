@@ -1,17 +1,38 @@
 # application-builder
 
-##### A graphical environment for interactively building Selene applications
+##### A graphical environment for interactively building Selenia applications
+
+## Early development stage
+
+Not ready for use.
 
 ## Installation
 
 Type this on the terminal, on your application's directory:
 
 ```shell
-selene module:install-plugin selene-framework/application-builder
+selenia module:install-plugin selenia-framework/application-builder
 ```
+
+```shell
+selenia module:install-plugin
+```
+
+and select `application-builder` from the displayed list, or type
+
+```shell
+selenia module:install-plugin selenia-plugins/application-builder
+```
+
+or type
+
+```shell
+composer require selenia-plugins/application-builder
+```
+
 
 ## License
 
-The Selene Framework is open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The Selenia framework is open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-**Selene Framework** - Copyright &copy; Impactwave, Lda.
+**Selenia framework** - Copyright &copy; Impactwave, Lda.

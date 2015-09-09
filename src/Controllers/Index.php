@@ -1,7 +1,7 @@
 <?php
-namespace Selene\ApplicationBuilder\Controllers;
-use Selene\Controller;
-use Selene\Lib\PackagistAPI;
+namespace Selenia\Plugins\ApplicationBuilder\Controllers;
+use Selenia\Controller;
+use Selenia\Lib\PackagistAPI;
 
 class Index extends Controller
 {
@@ -32,7 +32,7 @@ class Index extends Controller
   protected function viewModel ()
   {
     return [
-      'packages' => (new PackagistAPI)->type ('selene-plugin')->search (true),
+      'packages' => (new PackagistAPI)->type ('selenia-plugin')->search (true),
     ];
   }
 }
