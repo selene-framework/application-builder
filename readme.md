@@ -11,10 +11,6 @@ Not ready for use.
 Type this on the terminal, on your application's directory:
 
 ```shell
-selenia module:install-plugin selenia-framework/application-builder
-```
-
-```shell
 selenia module:install-plugin
 ```
 
@@ -24,12 +20,7 @@ and select `selenia-plugins/application-builder` from the displayed list, or typ
 selenia module:install-plugin selenia-plugins/application-builder
 ```
 
-or type
-
-```shell
-composer require selenia-plugins/application-builder
-```
-
+> For correct operation, do not install this package directly with Composer.
 
 ## License
 
