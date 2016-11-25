@@ -1,22 +1,35 @@
 <?php
 namespace Selenia\Plugins\ApplicationBuilder\Config;
 
-use Selenia\Plugins\ApplicationBuilder\Controllers\Index;
+use Electro\Interfaces\Http\Shared\ApplicationRouterInterface;
+use Electro\Interfaces\KernelInterface;
+use Electro\Interfaces\ModuleInterface;
+use Electro\Kernel\Config\KernelSettings;
+use Electro\Kernel\Lib\ModuleInfo;
+use Electro\Navigation\Config\NavigationSettings;
+use Electro\Plugins\Matisse\Config\MatisseSettings;
+use Electro\Profiles\WebProfile;
+use Electro\ViewEngine\Config\ViewEngineSettings;
 
-class ApplicationBuilderModule
+
+class ApplicationBuilderModule implements ModuleInterface
 {
-  const ref = __CLASS__;
-
-  static function routes ()
+  static function getCompatibleProfiles ()
   {
-    return [
-
-      PageRoute ([
-        'title'      => 'Modules Manager Index',
-        'URI'        => 'application-builder',
-        'controller' => Index::ref (),
-      ]),
-
-    ];
+    return [WebProfile::class];
   }
+
+  static function startUp (KernelInterface $kernel, ModuleInfo $moduleInfo)
+  {
+    $kernel->onConfigure (
+      function (ApplicationRouterInterface $router, NavigationSettings $navigationSettings,
+                ViewEngineSettings $viewEngineSettings, MatisseSettings $matisseSettings)
+      use ($moduleInfo) {
+        $viewEngineSettings->registerViews ($moduleInfo);
+        $matisseSettings->registerMacros ($moduleInfo);
+        $router->add (Routes::class);
+        $navigationSettings->registerNavigation (Navigation::class);
+      });
+  }
+
 }
