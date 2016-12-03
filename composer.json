@@ -1,5 +1,5 @@
 {
-  "name": "selenia-modules/application-builder",
+  "name": "selenia/application-builder",
   "description": "A graphical environment for interactively building Selenia applications",
   "type": "selenia-plugin",
   "keywords": [
