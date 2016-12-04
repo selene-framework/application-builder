@@ -11,7 +11,7 @@ Not ready for use.
 Type this on the terminal, on your application's directory:
 
 ```bash
-workman module:install-plugin selenia-modules/application-builder
+workman install plugin selenia/application-builder
 ```
 
 > For correct operation, do not install this package directly with Composer.
